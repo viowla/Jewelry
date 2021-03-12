@@ -1,19 +1,10 @@
 package entities.semiprecious;
 
 public class Chrysolite extends SemipreciousStones{
-    @Override
-    public String quality() {
-        return super.quality();
-    }
+    SemipreciousStones chrysolite;
 
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
-    @Override
-    public String color() {
-        return super.color();
+    public Chrysolite(SemipreciousStones chrysolite){
+        this.chrysolite=chrysolite;
     }
 
     @Override
@@ -22,7 +13,16 @@ public class Chrysolite extends SemipreciousStones{
     }
 
     @Override
-    public double weightCarat() {
-        return super.weightCarat();
+    public String color() {
+        return "Olive";
+    }
+
+    @Override
+    public String transparency() {
+        return "Clear";
+    }
+
+    public String getChrysolite() {
+        return chrysolite.color()+chrysolite.quality()+chrysolite.transparency();
     }
 }

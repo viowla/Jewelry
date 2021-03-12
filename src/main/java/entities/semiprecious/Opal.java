@@ -1,19 +1,10 @@
 package entities.semiprecious;
 
 public class Opal extends SemipreciousStones{
-    @Override
-    public String quality() {
-        return super.quality();
-    }
+    SemipreciousStones opal;
 
-    @Override
-    public String transparency() {
-        return super.transparency();
-    }
-
-    @Override
-    public String color() {
-        return super.color();
+    public Opal(SemipreciousStones opal){
+        this.opal=opal;
     }
 
     @Override
@@ -22,7 +13,11 @@ public class Opal extends SemipreciousStones{
     }
 
     @Override
-    public double weightCarat() {
-        return super.weightCarat();
+    public String color() {
+        return "White";
+    }
+
+    public String getOpal() {
+        return opal.color()+opal.quality()+opal.transparency();
     }
 }

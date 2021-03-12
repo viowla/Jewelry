@@ -13,6 +13,11 @@ public class Sapphire extends Gems{
         return 10000.0;
     }
 
+    @Override
+    public String color() {
+        return "Blue";
+    }
+
     public String getSapphire() {
         return sapphire.color()+sapphire.quality()+sapphire.transparency();
     }

@@ -1,19 +1,10 @@
 package entities.semiprecious;
 
 public class Amethyst extends SemipreciousStones{
-    @Override
-    public String quality() {
-        return super.quality();
-    }
+    SemipreciousStones amethyst;
 
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
-    @Override
-    public String color() {
-        return super.color();
+    public Amethyst(SemipreciousStones amethyst){
+        this.amethyst=amethyst;
     }
 
     @Override
@@ -22,7 +13,16 @@ public class Amethyst extends SemipreciousStones{
     }
 
     @Override
-    public double weightCarat() {
-        return super.weightCarat();
+    public String color() {
+        return "Purple";
+    }
+
+    @Override
+    public String transparency() {
+        return "Clear";
+    }
+
+    public String getAmethyst() {
+        return amethyst.color()+amethyst.quality()+amethyst.transparency();
     }
 }

@@ -1,19 +1,10 @@
 package entities.semiprecious;
 
 public class Garnet extends SemipreciousStones{
-    @Override
-    public String quality() {
-        return super.quality();
-    }
+    SemipreciousStones garnet;
 
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
-    @Override
-    public String color() {
-        return super.color();
+    public Garnet(SemipreciousStones garnet){
+        this.garnet=garnet;
     }
 
     @Override
@@ -22,7 +13,16 @@ public class Garnet extends SemipreciousStones{
     }
 
     @Override
-    public double weightCarat() {
-        return super.weightCarat();
+    public String color() {
+        return "Dark red";
+    }
+
+    @Override
+    public String transparency() {
+        return "Clear";
+    }
+
+    public String getGarnet() {
+        return garnet.color()+garnet.quality()+garnet.transparency();
     }
 }

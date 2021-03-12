@@ -12,6 +12,11 @@ public class Emerald extends Gems{
         return 5400.0;
     }
 
+    @Override
+    public String color() {
+        return "Green";
+    }
+
     public String getEmerald() {
         return emerald.color()+emerald.quality()+emerald.transparency();
     }

@@ -1,19 +1,10 @@
 package entities.semiprecious;
 
 public class Aquamarine extends SemipreciousStones{
-    @Override
-    public String quality() {
-        return super.quality();
-    }
+    SemipreciousStones aquamarine;
 
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
-    @Override
-    public String color() {
-        return super.color();
+    public Aquamarine(SemipreciousStones aquamarine){
+        this.aquamarine=aquamarine;
     }
 
     @Override
@@ -22,7 +13,16 @@ public class Aquamarine extends SemipreciousStones{
     }
 
     @Override
-    public double weightCarat() {
-        return super.weightCarat();
+    public String color() {
+        return "Light blue";
+    }
+
+    @Override
+    public String transparency() {
+        return "Clear";
+    }
+
+    public String getAquamarine() {
+        return aquamarine.color()+aquamarine.quality()+aquamarine.transparency();
     }
 }
