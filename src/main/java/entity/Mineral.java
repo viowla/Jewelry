@@ -5,5 +5,7 @@ public abstract class Mineral {
     public abstract String transparency();
     public abstract String color();
     public abstract double cost();
-    public abstract double weightCarat();
+    public  double weightCarat(){
+        return 0.2;
+    }
 }
