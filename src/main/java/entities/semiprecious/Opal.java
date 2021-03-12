@@ -1,9 +1,11 @@
 package entities.semiprecious;
 
-public class Opal extends SemipreciousStones{
-    SemipreciousStones opal;
+import entities.Mineral;
 
-    public Opal(SemipreciousStones opal){
+public class Opal extends SemipreciousStones{
+    Mineral opal;
+
+    public Opal(Mineral opal){
         this.opal=opal;
     }
 

@@ -1,9 +1,11 @@
 package entities.semiprecious;
 
-public class Amethyst extends SemipreciousStones{
-    SemipreciousStones amethyst;
+import entities.Mineral;
 
-    public Amethyst(SemipreciousStones amethyst){
+public class Amethyst extends SemipreciousStones{
+    Mineral amethyst;
+
+    public Amethyst(Mineral amethyst){
         this.amethyst=amethyst;
     }
 

@@ -1,10 +1,12 @@
 package entities.gems;
 
+import entities.Mineral;
+
 public class Ruby extends Gems{
 
-    Gems ruby;
+    Mineral ruby;
 
-    public Ruby(Gems ruby){
+    public Ruby(Mineral ruby){
         this.ruby=ruby;
     }
 

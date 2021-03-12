@@ -1,9 +1,11 @@
 package entities.semiprecious;
 
-public class Chrysolite extends SemipreciousStones{
-    SemipreciousStones chrysolite;
+import entities.Mineral;
 
-    public Chrysolite(SemipreciousStones chrysolite){
+public class Chrysolite extends SemipreciousStones{
+    Mineral chrysolite;
+
+    public Chrysolite(Mineral chrysolite){
         this.chrysolite=chrysolite;
     }
 

@@ -1,10 +1,12 @@
 package entities.gems;
 
+import entities.Mineral;
+
 public class Sapphire extends Gems{
 
-    Gems sapphire;
+    Mineral sapphire;
 
-    public Sapphire(Gems sapphire){
+    public Sapphire(Mineral sapphire){
         this.sapphire=sapphire;
     }
 

@@ -2,7 +2,7 @@ package entities.semiprecious;
 
 import entities.Mineral;
 
-public class SemipreciousStones implements Mineral {
+public class SemipreciousStones extends Mineral {
     @Override
     public String quality() {
         return "Standart";

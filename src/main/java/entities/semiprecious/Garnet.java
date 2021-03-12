@@ -1,9 +1,11 @@
 package entities.semiprecious;
 
-public class Garnet extends SemipreciousStones{
-    SemipreciousStones garnet;
+import entities.Mineral;
 
-    public Garnet(SemipreciousStones garnet){
+public class Garnet extends SemipreciousStones{
+    Mineral garnet;
+
+    public Garnet(Mineral garnet){
         this.garnet=garnet;
     }
 

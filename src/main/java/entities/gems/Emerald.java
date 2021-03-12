@@ -1,9 +1,11 @@
 package entities.gems;
 
-public class Emerald extends Gems{
-    Gems emerald;
+import entities.Mineral;
 
-    public Emerald(Gems emerald){
+public class Emerald extends Gems{
+    Mineral emerald;
+
+    public Emerald(Mineral emerald){
         this.emerald=emerald;
     }
 

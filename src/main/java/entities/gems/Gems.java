@@ -2,7 +2,7 @@ package entities.gems;
 
 import entities.Mineral;
 
-public class Gems implements Mineral {
+public class Gems extends Mineral {
 
     @Override
     public String quality() {
