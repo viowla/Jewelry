@@ -1,8 +1,8 @@
-package entities.gems;
+package entity.gems;
 
-import entities.Mineral;
+import entity.Mineral;
 
-public class Ruby extends Gems{
+public class Ruby extends Gem {
 
     Mineral ruby;
 

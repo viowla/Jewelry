@@ -1,16 +1,17 @@
-package entities.semiprecious;
+package entity.gems;
 
-import entities.Mineral;
+import entity.Mineral;
 
-public class SemipreciousStones extends Mineral {
+public class Gem extends Mineral {
+
     @Override
     public String quality() {
-        return "Standart";
+        return "High";
     }
 
     @Override
     public String transparency() {
-        return "Admixture";
+        return "Clear";
     }
 
     @Override
@@ -20,7 +21,7 @@ public class SemipreciousStones extends Mineral {
 
     @Override
     public double cost() {
-        return 75.0;
+        return 6825.0;
     }
 
     @Override

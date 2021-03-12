@@ -1,8 +1,8 @@
-package entities.semiprecious;
+package entity.semiprecious;
 
-import entities.Mineral;
+import entity.Mineral;
 
-public class Aquamarine extends SemipreciousStones{
+public class Aquamarine extends SemipreciousStone {
     Mineral aquamarine;
 
     public Aquamarine(Mineral aquamarine){

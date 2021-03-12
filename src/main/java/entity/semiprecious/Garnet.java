@@ -1,8 +1,8 @@
-package entities.semiprecious;
+package entity.semiprecious;
 
-import entities.Mineral;
+import entity.Mineral;
 
-public class Garnet extends SemipreciousStones{
+public class Garnet extends SemipreciousStone {
     Mineral garnet;
 
     public Garnet(Mineral garnet){

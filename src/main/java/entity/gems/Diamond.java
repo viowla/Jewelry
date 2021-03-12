@@ -1,8 +1,8 @@
-package entities.gems;
+package entity.gems;
 
-import entities.Mineral;
+import entity.Mineral;
 
-public class Diamond extends Gems{
+public class Diamond extends Gem {
 
     Mineral diamond;
 
