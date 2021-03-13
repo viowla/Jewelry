@@ -16,7 +16,7 @@ public class Sapphire extends Gem {
     }
 
 
-    public String getSapphire() {
+    public String getDescription() {
         return sapphire.getColor().replace(getColor(), "Blue")+sapphire.getQuality()+sapphire.getTransparency();
     }
 }

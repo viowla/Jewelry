@@ -25,4 +25,7 @@ public abstract class Mineral {
 
     public abstract double cost();
 
+    public String getDescription(){
+        return quality+" "+transparency+" "+color;
+    }
 }

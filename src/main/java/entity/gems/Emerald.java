@@ -15,7 +15,7 @@ public class Emerald extends Gem {
     }
 
 
-    public String getEmerald() {
+    public String getDescription() {
         return emerald.getColor().replace(getColor(), "Green")+emerald.getQuality()+emerald.getTransparency()       ;
     }
 }

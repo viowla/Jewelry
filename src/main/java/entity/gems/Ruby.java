@@ -16,7 +16,7 @@ public class Ruby extends Gem {
     }
 
 
-    public String getRuby() {
+    public String getDescription() {
         return ruby.getColor().replace(getColor(), "Red")+ruby.getQuality()+ruby.getTransparency();
     }
 }
