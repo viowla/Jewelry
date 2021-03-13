@@ -3,9 +3,9 @@ package entity.semiprecious;
 import entity.Mineral;
 
 public class Garnet extends SemipreciousStone {
-    Mineral garnet;
+    SemipreciousStone garnet;
 
-    public Garnet(Mineral garnet){
+    public Garnet(SemipreciousStone garnet){
         this.garnet=garnet;
     }
 

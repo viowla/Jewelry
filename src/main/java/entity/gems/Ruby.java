@@ -4,9 +4,9 @@ import entity.Mineral;
 
 public class Ruby extends Gem {
 
-    Mineral ruby;
+    Gem ruby;
 
-    public Ruby(Mineral ruby){
+    public Ruby(Gem ruby){
         this.ruby=ruby;
     }
 

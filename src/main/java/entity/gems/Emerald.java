@@ -3,9 +3,9 @@ package entity.gems;
 import entity.Mineral;
 
 public class Emerald extends Gem {
-    Mineral emerald;
+    Gem emerald;
 
-    public Emerald(Mineral emerald){
+    public Emerald(Gem emerald){
         this.emerald=emerald;
     }
 

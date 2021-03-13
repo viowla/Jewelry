@@ -3,9 +3,9 @@ package entity.semiprecious;
 import entity.Mineral;
 
 public class Amethyst extends SemipreciousStone {
-    Mineral amethyst;
+    SemipreciousStone amethyst;
 
-    public Amethyst(Mineral amethyst){
+    public Amethyst(SemipreciousStone amethyst){
         this.amethyst=amethyst;
     }
 

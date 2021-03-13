@@ -4,9 +4,9 @@ import entity.Mineral;
 
 public class Diamond extends Gem {
 
-    Mineral diamond;
+    Gem diamond;
 
-    public Diamond(Mineral diamond){
+    public Diamond(Gem diamond){
         this.diamond=diamond;
     }
 
