@@ -1,11 +1,28 @@
 package entity;
 
 public abstract class Mineral {
-    public abstract String quality();
-    public abstract String transparency();
-    public abstract String color();
-    public abstract double cost();
-    public  double weightCarat(){
-        return 0.2;
+
+    String quality="High";
+    String transparency ="Clear";
+    String color = "Colorless";
+    double carat=0.2;
+
+    public String getQuality() {
+        return quality;
     }
+
+    public String getTransparency() {
+        return transparency;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public double getCarat() {
+        return carat;
+    }
+
+    public abstract double cost();
+
 }
