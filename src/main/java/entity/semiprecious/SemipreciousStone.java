@@ -7,7 +7,7 @@ public class SemipreciousStone extends Mineral {
     public SemipreciousStone(){
         getQuality().replace(getQuality(), "Standard");
         getColor();
-        getTransparency().replace(getTransparency(), "Admixture");
+        getTransparency();
         getCarat();
     }
 

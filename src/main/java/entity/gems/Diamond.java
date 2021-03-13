@@ -16,6 +16,6 @@ public class Diamond extends Gem {
     }
 
     public String getDiamond() {
-        return diamond.color()+diamond.quality()+diamond.transparency();
+        return diamond.getColor()+diamond.getQuality()+diamond.getQuality();
     }
 }

@@ -14,17 +14,7 @@ public class Amethyst extends SemipreciousStone {
         return 42.0;
     }
 
-    @Override
-    public String color() {
-        return "Purple";
-    }
-
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
     public String getAmethyst() {
-        return amethyst.color()+amethyst.quality()+amethyst.transparency();
+        return amethyst.getColor().replace(getColor(), "Purple")+amethyst.getQuality()+amethyst.getTransparency();
     }
 }

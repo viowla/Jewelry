@@ -14,17 +14,7 @@ public class Garnet extends SemipreciousStone {
         return 60.0;
     }
 
-    @Override
-    public String color() {
-        return "Dark red";
-    }
-
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
     public String getGarnet() {
-        return garnet.color()+garnet.quality()+garnet.transparency();
+        return garnet.getColor().replace(getColor(), "Dark red")+garnet.getQuality()+garnet.getTransparency();
     }
 }

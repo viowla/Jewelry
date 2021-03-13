@@ -14,12 +14,8 @@ public class Opal extends SemipreciousStone {
         return 50.0;
     }
 
-    @Override
-    public String color() {
-        return "White";
-    }
 
     public String getOpal() {
-        return opal.color()+opal.quality()+opal.transparency();
+        return opal.getColor().replace(getColor(), "White")+opal.getQuality()+opal.getTransparency().replace(getTransparency(), "Admixture");
     }
 }

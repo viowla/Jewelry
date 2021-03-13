@@ -14,17 +14,7 @@ public class Chrysolite extends SemipreciousStone {
         return 170.0;
     }
 
-    @Override
-    public String color() {
-        return "Olive";
-    }
-
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
     public String getChrysolite() {
-        return chrysolite.color()+chrysolite.quality()+chrysolite.transparency();
+        return chrysolite.getColor().replace(getColor(), "Olive")+chrysolite.getQuality()+chrysolite.getTransparency();
     }
 }

@@ -15,12 +15,8 @@ public class Sapphire extends Gem {
         return 10000.0;
     }
 
-    @Override
-    public String color() {
-        return "Blue";
-    }
 
     public String getSapphire() {
-        return sapphire.color()+sapphire.quality()+sapphire.transparency();
+        return sapphire.getColor().replace(getColor(), "Blue")+sapphire.getQuality()+sapphire.getTransparency();
     }
 }

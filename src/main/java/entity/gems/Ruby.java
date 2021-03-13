@@ -15,12 +15,8 @@ public class Ruby extends Gem {
         return 10000.0;
     }
 
-    @Override
-    public String color() {
-        return "Red";
-    }
 
     public String getRuby() {
-        return ruby.color()+ruby.quality()+ruby.transparency();
+        return ruby.getColor().replace(getColor(), "Red")+ruby.getQuality()+ruby.getTransparency();
     }
 }

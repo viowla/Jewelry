@@ -14,17 +14,7 @@ public class Aquamarine extends SemipreciousStone {
         return 60.0;
     }
 
-    @Override
-    public String color() {
-        return "Light blue";
-    }
-
-    @Override
-    public String transparency() {
-        return "Clear";
-    }
-
     public String getAquamarine() {
-        return aquamarine.color()+aquamarine.quality()+aquamarine.transparency();
+        return aquamarine.getColor().replace(getColor(), "Light blue")+aquamarine.getQuality()+aquamarine.getTransparency();
     }
 }
