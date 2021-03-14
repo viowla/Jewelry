@@ -27,8 +27,13 @@ public class Gem extends Mineral {
     }
 
     @Override
-    public double getCarat() {
+    public int getCarat() {
         return super.getCarat();
+    }
+
+    @Override
+    public void setCarat(int carat) {
+        super.setCarat(carat);
     }
 
     public double cost() {

@@ -1,7 +1,5 @@
 package entity.gems;
 
-import entity.Mineral;
-
 public class Emerald extends Gem {
     Gem emerald;
 
@@ -14,8 +12,32 @@ public class Emerald extends Gem {
         return 5400.0;
     }
 
+    @Override
+    public String getQuality() {
+        return super.getQuality();
+    }
+
+    @Override
+    public String getTransparency() {
+        return super.getTransparency();
+    }
+
+    @Override
+    public String getColor() {
+        return super.getColor();
+    }
+
+    @Override
+    public int getCarat() {
+        return super.getCarat();
+    }
+
+    @Override
+    public void setCarat(int carat) {
+        super.setCarat(carat);
+    }
 
     public String getDescription() {
-        return emerald.getColor().replace(getColor(), "Green")+emerald.getQuality()+emerald.getTransparency()       ;
+        return emerald.getColor().replace(getColor(), "Green")+emerald.getQuality()+emerald.getTransparency()+" "+emerald.getCarat()      ;
     }
 }

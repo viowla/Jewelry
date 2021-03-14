@@ -1,6 +1,5 @@
 package entity.gems;
 
-import entity.Mineral;
 
 public class Diamond extends Gem {
 
@@ -26,8 +25,13 @@ public class Diamond extends Gem {
     }
 
     @Override
-    public double getCarat() {
+    public int getCarat() {
         return super.getCarat();
+    }
+
+    @Override
+    public void setCarat(int carat) {
+        super.setCarat(carat);
     }
 
     @Override
@@ -36,6 +40,6 @@ public class Diamond extends Gem {
     }
 
     public String getDescription() {
-        return diamond.getColor()+" "+diamond.getQuality()+" "+diamond.getTransparency();
+        return diamond.getColor()+" "+diamond.getQuality()+" "+diamond.getTransparency()+" "+diamond.getCarat();
     }
 }
