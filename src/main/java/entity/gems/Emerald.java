@@ -9,11 +9,16 @@ public class Emerald extends Gem {
 
     @Override
     public double cost() {
-        return 5400.0;
+        return 3900.0;
+    }
+
+    @Override
+    public String getColor() {
+        return emerald.getColor().replace(emerald.getColor(), "Green");
     }
 
     @Override
     public String getDescription() {
-        return emerald.getColor().replace(getColor(), "Green")+emerald.getQuality()+emerald.getTransparency()+" "+emerald.getCarat()      ;
+        return getColor()+" "+emerald.getQuality()+" "+emerald.getTransparency();
     }
 }

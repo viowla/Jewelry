@@ -5,7 +5,7 @@ public abstract class Mineral {
     String quality="High";
     String transparency ="Clear";
     String color = "Colorless";
-    double carat=0.2;
+    int carat=1;
 
     public String getQuality() {
         return quality;
@@ -19,8 +19,24 @@ public abstract class Mineral {
         return color;
     }
 
-    public double getCarat() {
+    public int getCarat() {
         return carat;
+    }
+
+    public void setCarat(int carat) {
+        this.carat = carat;
+    }
+
+    public void setQuality(String quality) {
+        this.quality = quality;
+    }
+
+    public void setTransparency(String transparency) {
+        this.transparency = transparency;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public abstract double cost();

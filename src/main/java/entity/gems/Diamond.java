@@ -14,8 +14,9 @@ public class Diamond extends Gem {
         return 5400.0;
     }
 
+
     @Override
     public String getDescription() {
-        return diamond.getColor()+" "+diamond.getQuality()+" "+diamond.getTransparency()+" "+diamond.getCarat();
+        return diamond.getColor()+" "+diamond.getQuality()+" "+diamond.getTransparency();
     }
 }

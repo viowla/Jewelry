@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Aquamarine extends SemipreciousStone {
     SemipreciousStone aquamarine;
 
@@ -14,7 +12,13 @@ public class Aquamarine extends SemipreciousStone {
         return 60.0;
     }
 
-    public String getAquamarine() {
-        return aquamarine.getColor().replace(getColor(), "Light blue")+aquamarine.getQuality()+aquamarine.getTransparency();
+    @Override
+    public String getColor() {
+        return aquamarine.getColor().replace(aquamarine.getColor(), "Light blue");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+aquamarine.getQuality()+" "+aquamarine.getTransparency();
     }
 }

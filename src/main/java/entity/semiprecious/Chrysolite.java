@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Chrysolite extends SemipreciousStone {
     SemipreciousStone chrysolite;
 
@@ -14,7 +12,13 @@ public class Chrysolite extends SemipreciousStone {
         return 170.0;
     }
 
-    public String getChrysolite() {
-        return chrysolite.getColor().replace(getColor(), "Olive")+chrysolite.getQuality()+chrysolite.getTransparency();
+    @Override
+    public String getColor() {
+        return chrysolite.getColor().replace(chrysolite.getColor(), "Olive");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+chrysolite.getQuality()+" "+chrysolite.getTransparency();
     }
 }

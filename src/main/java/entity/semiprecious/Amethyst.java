@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Amethyst extends SemipreciousStone {
     SemipreciousStone amethyst;
 
@@ -14,7 +12,13 @@ public class Amethyst extends SemipreciousStone {
         return 42.0;
     }
 
-    public String getAmethyst() {
-        return amethyst.getColor().replace(getColor(), "Purple")+amethyst.getQuality()+amethyst.getTransparency();
+    @Override
+    public String getColor() {
+        return amethyst.getColor().replace(amethyst.getColor(), "Purple");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+amethyst.getQuality()+" "+amethyst.getTransparency();
     }
 }

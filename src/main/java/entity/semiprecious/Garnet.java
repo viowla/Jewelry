@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Garnet extends SemipreciousStone {
     SemipreciousStone garnet;
 
@@ -14,7 +12,13 @@ public class Garnet extends SemipreciousStone {
         return 60.0;
     }
 
-    public String getGarnet() {
-        return garnet.getColor().replace(getColor(), "Dark red")+garnet.getQuality()+garnet.getTransparency();
+    @Override
+    public String getColor() {
+        return garnet.getColor().replace(garnet.getColor(), "Dark red");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+garnet.getQuality()+" "+garnet.getTransparency();
     }
 }

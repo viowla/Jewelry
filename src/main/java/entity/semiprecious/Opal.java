@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Opal extends SemipreciousStone {
     SemipreciousStone opal;
 
@@ -14,8 +12,18 @@ public class Opal extends SemipreciousStone {
         return 50.0;
     }
 
+    @Override
+    public String getColor() {
+        return opal.getColor().replace(opal.getColor(), "White");
+    }
 
-    public String getOpal() {
-        return opal.getColor().replace(getColor(), "White")+opal.getQuality()+opal.getTransparency().replace(getTransparency(), "Admixture");
+    @Override
+    public String getTransparency() {
+        return opal.getTransparency().replace(opal.getTransparency(),  "Admixture");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+opal.getQuality()+" "+getTransparency();
     }
 }

@@ -11,31 +11,6 @@ public class Gem extends Mineral {
         super.getTransparency();
     }
 
-    @Override
-    public String getQuality() {
-        return super.getQuality();
-    }
-
-    @Override
-    public String getTransparency() {
-        return super.getTransparency();
-    }
-
-    @Override
-    public String getColor() {
-        return super.getColor();
-    }
-
-    @Override
-    public int getCarat() {
-        return super.getCarat();
-    }
-
-    @Override
-    public void setCarat(int carat) {
-        super.setCarat(carat);
-    }
-
     public double cost() {
         return 6825.0;
     }

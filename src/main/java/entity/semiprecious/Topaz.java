@@ -1,7 +1,5 @@
 package entity.semiprecious;
 
-import entity.Mineral;
-
 public class Topaz extends SemipreciousStone {
     SemipreciousStone topaz;
 
@@ -11,10 +9,16 @@ public class Topaz extends SemipreciousStone {
 
     @Override
     public double cost() {
-        return 60.0;
+        return 70.0;
     }
 
-    public String getTopaz() {
-        return topaz.getColor().replace(getColor(), "Yellow")+topaz.getQuality()+topaz.getTransparency();
+    @Override
+    public String getColor() {
+        return topaz.getColor().replace(topaz.getColor(), "Yellow");
+    }
+
+    @Override
+    public String getDescription() {
+        return getColor()+" "+topaz.getQuality()+" "+topaz.getTransparency();
     }
 }

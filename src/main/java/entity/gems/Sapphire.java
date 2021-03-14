@@ -11,11 +11,16 @@ public class Sapphire extends Gem {
 
     @Override
     public double cost() {
-        return 10000.0;
+        return 8000.0;
+    }
+
+    @Override
+    public String getColor() {
+        return sapphire.getColor().replace(sapphire.getColor(), "Blue");
     }
 
     @Override
     public String getDescription() {
-        return sapphire.getColor().replace(getColor(), "Blue")+sapphire.getQuality()+sapphire.getTransparency()+" "+sapphire.getCarat();
+        return getColor()+" "+sapphire.getQuality()+" "+sapphire.getTransparency();
     }
 }
