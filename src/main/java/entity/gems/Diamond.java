@@ -10,35 +10,11 @@ public class Diamond extends Gem {
     }
 
     @Override
-    public String getQuality() {
-        return super.getQuality();
-    }
-
-    @Override
-    public String getTransparency() {
-        return super.getTransparency();
-    }
-
-    @Override
-    public String getColor() {
-        return super.getColor();
-    }
-
-    @Override
-    public int getCarat() {
-        return super.getCarat();
-    }
-
-    @Override
-    public void setCarat(int carat) {
-        super.setCarat(carat);
-    }
-
-    @Override
     public double cost() {
         return 5400.0;
     }
 
+    @Override
     public String getDescription() {
         return diamond.getColor()+" "+diamond.getQuality()+" "+diamond.getTransparency()+" "+diamond.getCarat();
     }

@@ -13,30 +13,6 @@ public class Emerald extends Gem {
     }
 
     @Override
-    public String getQuality() {
-        return super.getQuality();
-    }
-
-    @Override
-    public String getTransparency() {
-        return super.getTransparency();
-    }
-
-    @Override
-    public String getColor() {
-        return super.getColor();
-    }
-
-    @Override
-    public int getCarat() {
-        return super.getCarat();
-    }
-
-    @Override
-    public void setCarat(int carat) {
-        super.setCarat(carat);
-    }
-
     public String getDescription() {
         return emerald.getColor().replace(getColor(), "Green")+emerald.getQuality()+emerald.getTransparency()+" "+emerald.getCarat()      ;
     }
