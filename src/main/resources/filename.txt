@@ -1,0 +1,2 @@
+43220.0
+[entity.gems.Sapphire@6f496d9f, entity.gems.Diamond@723279cf, entity.semiprecious.Amethyst@10f87f48, entity.semiprecious.Topaz@b4c966a]

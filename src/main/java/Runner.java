@@ -41,11 +41,11 @@ public class Runner {
 
         //Write results in file
         try {
-            FileWriter myWriter = new FileWriter("filename.txt");
-            myWriter.write(String.valueOf(cost));
-            myWriter.write(System.getProperty( "line.separator" ));
-            myWriter.write(necklace.toString());
-            myWriter.close();
+            try (FileWriter myWriter = new FileWriter("filename.txt")) {
+                myWriter.write(String.valueOf(cost));
+                myWriter.write(System.getProperty("line.separator"));
+                myWriter.write(necklace.toString());
+            }
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
             System.out.println("An error occurred.");

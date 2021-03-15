@@ -17,12 +17,7 @@ public class MineralService {
     }
 
     public void sortMineral(List<Mineral> necklace){
-        Collections.sort(necklace, new Comparator<Mineral>() {
-            @Override
-            public int compare(Mineral o1, Mineral o2) {
-                return o1.getDescription().compareTo(o2.getDescription());
-            }
-        });
+        Collections.sort(necklace, Comparator.comparing(Mineral::getDescription));
     }
 
 }
