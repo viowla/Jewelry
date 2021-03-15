@@ -38,7 +38,7 @@ public class Runner {
 
         System.out.println(necklace);
         System.out.println(cost);
-        
+
         //Write results in file
         try {
             FileWriter myWriter = new FileWriter("filename.txt");
