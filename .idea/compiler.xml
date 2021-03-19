@@ -25,6 +25,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar" />
         </processorPath>
         <module name="University" />
+        <module name="JavaIO" />
       </profile>
     </annotationProcessing>
   </component>

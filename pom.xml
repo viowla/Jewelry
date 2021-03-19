@@ -40,5 +40,6 @@
     </build>
     <modules>
         <module>University</module>
+        <module>JavaIO</module>
     </modules>
 </project>
